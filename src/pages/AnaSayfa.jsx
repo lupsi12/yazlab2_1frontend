@@ -64,8 +64,10 @@ function AnaSayfa() {
                 console.log(isChecked+" part updated. "+ kelimeText+" ddd "+partInfo.durum+" ddd "+partInfo.kelime)
 
                 partInfo.kelime = kelimeText
+                partInfo.duzelenKelime = kelimeText+' -- yazımı düzeltilmiş sonuçları görüyorsunuz'
                 partInfo.durum = isChecked
 
+                console.log(isChecked+" part updated. "+ kelimeText+" ddd "+partInfo.durum+" ddd "+partInfo.kelime+" ddd "+partInfo.duzelenKelime)
                 const putResponse = await fetch(`/part/1`, {
                     method: "PUT",
                     headers: {
@@ -75,7 +77,7 @@ function AnaSayfa() {
                 })
 
                 if (putResponse.ok) {
-                    console.log(isChecked+" part updated. "+ kelimeText+" ddd "+partInfo.durum+" ddd "+partInfo.kelime)
+                    console.log(isChecked+" part updated. "+ kelimeText+" ddd "+partInfo.durum+" ddd "+partInfo.kelime+" ddd "+partInfo.duzelenKelime)
                 }
             },
         )
