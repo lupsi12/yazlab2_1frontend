@@ -1,9 +1,23 @@
-import AnaSayfa from "./pages/AnaSayfa";
+/*
 import React from "react"
 import ReactDOM from "react-dom/client"
+import Liste from "./pages/Liste";
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
     <React.StrictMode>
-        < AnaSayfa />
+        <Liste  />
     </React.StrictMode>
 );
+
+ */
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+)
